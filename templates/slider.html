@@ -1,0 +1,14 @@
+<div id="slider" class="slider-wrapper">
+  <img ng-src="{{imageSrc}}" />
+  <div class="slider-footer">
+    <div class="slider-gallery">
+      <div class="slider-gallery_item" ng-repeat="thumb in images[indicatorId]">
+        <img ng-click="changeImage(thumb)" ng-src="{{thumb.image}}" alt="thumbs" />
+      </div>
+    </div>
+    <div id="slider-controls">
+      <span class="slider-gallery_prev" ng-click="goPrev()"><span class="glyphicon glyphicon-chevron-left"></span></span>
+      <span class="slider-gallery_next" ng-click="goNext()"><span class="glyphicon glyphicon-chevron-right"></span></span>
+    </div>
+  </div>
+</div>
